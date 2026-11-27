@@ -1,0 +1,42 @@
+{
+ "icao": "KSTS",
+ "name": "Charles M Schulz/Sonoma County",
+ "tower_name": "Charles M Schulz/Sonoma County Tower",
+ "frequencies": {
+  "Tower": "118.500",
+  "ATIS": "120.550",
+  "Ground": "121.900",
+  "UNICOM": "122.950"
+ },
+ "notes": [
+  "FAA 5010: TPA 1000 ft AGL small aircraft, 1500 ft AGL large aircraft.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "14": "right",
+  "20": "left",
+  "32": "left",
+  "02": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "14": 3.0,
+  "20": 3.5,
+  "02": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

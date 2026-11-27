@@ -1,0 +1,42 @@
+{
+ "icao": "KTUS",
+ "name": "Tucson Intl",
+ "tower_name": "Tucson Intl Tower",
+ "frequencies": {
+  "Tower": "118.300",
+  "Ground": "120.025",
+  "UNICOM": "122.950",
+  "ATIS": "123.800",
+  "Clearance": "126.650"
+ },
+ "notes": [
+  "FAA 5010: TPA 800 ft AGL small aircraft, 1400 ft AGL large/heavy turbojets.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 800,
+ "default_side": "right",
+ "runway_sides": {
+  "22": "right",
+  "30": "right",
+  "04": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "12": 3.0,
+  "22": 3.0,
+  "30": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

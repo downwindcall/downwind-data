@@ -1,0 +1,40 @@
+{
+ "icao": "KCMA",
+ "name": "Camarillo",
+ "tower_name": "Camarillo Tower",
+ "frequencies": {
+  "Clearance": "120.750",
+  "Ground": "121.800",
+  "UNICOM": "122.950",
+  "ATIS": "126.025",
+  "Tower": "128.200"
+ },
+ "notes": [
+  "FAA 5010: TPA 800 ft AGL single-engine, 1000 ft AGL multi-engine and jets.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 800,
+ "default_side": "left",
+ "runway_sides": {
+  "26": "left",
+  "08": "right"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "26": 3.0,
+  "08": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "icao": "KABQ",
+ "name": "Albuquerque Intl Sunport",
+ "tower_name": "Albuquerque Intl Sunport Tower",
+ "frequencies": {
+  "ATIS": "118.000",
+  "Clearance": "119.200",
+  "Tower": "120.300",
+  "Ground": "121.900",
+  "UNICOM": "122.950"
+ },
+ "notes": [
+  "FAA 5010: no airport-specific traffic pattern altitude published; 1000 ft AGL (FAA AC 90-66 recommendation) used.",
+  "Airline airport: pattern work is not normally available; values are for reference.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "12": "right",
+  "21": "left",
+  "26": "left",
+  "30": "left",
+  "03": "right",
+  "08": "right"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "21": 3.0,
+  "26": 3.0,
+  "30": 3.0,
+  "03": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

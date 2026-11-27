@@ -1,0 +1,39 @@
+{
+ "icao": "KFUL",
+ "name": "Fullerton Muni",
+ "tower_name": "Fullerton Muni Tower",
+ "frequencies": {
+  "Tower": "119.100",
+  "Ground": "121.800",
+  "UNICOM": "122.950",
+  "ATIS": "125.050"
+ },
+ "notes": [
+  "FAA 5010 TPA field: 1004 ft.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1004,
+ "default_side": "left",
+ "runway_sides": {
+  "24": "right",
+  "06": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "24": 4.0,
+  "06": 4.0
+ },
+ "glide_deg": 4.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

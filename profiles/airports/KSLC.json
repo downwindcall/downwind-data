@@ -1,0 +1,51 @@
+{
+ "icao": "KSLC",
+ "name": "Salt Lake City Intl",
+ "tower_name": "Salt Lake City Intl Tower",
+ "frequencies": {
+  "Tower": "118.300",
+  "Ground": "121.900",
+  "UNICOM": "122.950",
+  "ATIS": "124.750",
+  "Clearance": "127.300"
+ },
+ "notes": [
+  "FAA 5010: no airport-specific traffic pattern altitude published; 1000 ft AGL (FAA AC 90-66 recommendation) used.",
+  "Airline airport: pattern work is not normally available; values are for reference.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "14": "left",
+  "17": "left",
+  "32": "left",
+  "35": "left",
+  "16L": "left",
+  "34R": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "14": 3.0,
+  "17": 3.0,
+  "32": 3.0,
+  "35": 3.0,
+  "16L": 3.0,
+  "34R": 3.0,
+  "16R": 3.0,
+  "34L": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}
