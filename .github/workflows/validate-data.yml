@@ -22,14 +22,14 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Contribution (untrusted)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: pr
           fetch-depth: 0
           persist-credentials: false
 
       - name: Trusted rules (base branch)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.event.pull_request.base.sha || github.sha }}
           path: trusted
