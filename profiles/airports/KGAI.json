@@ -3,7 +3,8 @@
  "name": "Montgomery County Airpark",
  "frequencies": {
   "CTAF": "123.075",
-  "UNICOM": "123.075"
+  "UNICOM": "123.075",
+  "Clearance": "121.600"
  },
  "notes": [
   "FAA 5010: no airport-specific traffic pattern altitude published; 1000 ft AGL (FAA AC 90-66 recommendation) used.",

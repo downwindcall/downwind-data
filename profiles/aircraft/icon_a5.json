@@ -2,8 +2,7 @@
  "id": "icon_a5",
  "name": "ICON A5",
  "match": [
-  "ICON A5",
-  "ICON"
+  "ICON A5"
  ],
  "_note": "MEDIUM confidence. Limits, flap positions (0/15/30), rotate 50 and Vx/Vy come from the ICON A5 POH (ICA015523-A, sections 1.3, 2.2, 4.10, 5.1). The POH flies approaches on the AOA white line and gives no numeric approach speed; the FINAL band is built around the 58 KIAS 50 ft landing speed of section 5.12. Circuit bands are typical practice, not POH values. The A5 has retractable gear: gear calls are not modelled. Flap handle positions in MSFS were not checked in-sim.",
  "_verified": false,

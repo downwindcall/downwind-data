@@ -2,8 +2,7 @@
  "id": "baron_g58",
  "name": "Beechcraft Baron G58",
  "match": [
-  "G58",
-  "BARON"
+  "G58"
  ],
  "_note": "LOW confidence. Limits (VFE 152 approach / 122 full, VNO 195, VNE 223, VMC 84, VYSE 101, VR 85) are from a secondary summary of the G58 POH that does not cite sections; the POH extract for the earlier B58 also shows VNE 223. Stall speeds were NOT stored because sources disagree (Vs0 73 to 75). No approach speed was found: the FINAL band is derived as about 1.3 x Vs0 (~97 KIAS) and is typical practice only. Twin: engine-out speeds (VMC, VYSE) and retractable gear are not modelled. Check against your G58 POH before relying on it.",
  "_verified": false,
