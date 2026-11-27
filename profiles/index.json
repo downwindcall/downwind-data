@@ -1,0 +1,15 @@
+{
+ "files": {
+  "aircraft/c152.json": "bc5d1689576135f19d0786ce2e481960e47a0305ae33b3411951544d96dcddda",
+  "aircraft/c172_g1000.json": "8557f2a364eafadcf968c68f3befbfa40e2829c1454cab9d55c8880116be72d3",
+  "aircraft/c172_steam.json": "27ba048ac214368ef4914209cc0b71f83d79f43a22234b9f397190c307e8cf8a",
+  "aircraft/da40ng.json": "934b706c6877bf464b9a3df7833f57b8420226d6a5f2c0845d50d27a9e758390",
+  "aircraft/dr400_cadet.json": "2a1a5bb61c52dc390a938da5ca91f5abb3b6cd06bf470c78d324390fdeed08c2",
+  "aircraft/generic.json": "45ee8d95fa6f47a425fad38a3968531bf32f44adcc48d478303fe86a64dfb730",
+  "aircraft/sr22.json": "eb0c557e25aa7cf63b58b7dfdfdab90431994050bc170cbcf67399a3abf9cbfb",
+  "aircraft/virus_sw121.json": "4c3b61352f544cbd8bbd7bb383d1dedf832e8d338f9b1ad373fe9da1d51f9f79",
+  "airports/EHLE.json": "8b55335e8f66fb00e91f75ce17f2545bd506be5b380807934f1c872576fec6d5",
+  "verified.json": "8e5f88d08f6767b4cddab9f9043390ddbda8f4684968fdf4c24f8b854b2157ad"
+ },
+ "format": 1
+}

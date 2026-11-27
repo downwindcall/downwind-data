@@ -4,7 +4,8 @@
 
 Refuses unless the profile passes every check AND names at least one source. Writes the hash of the profile's content into
 profiles/verified.json; ANY later edit of the profile changes the hash and the 'Verified' badge disappears until re-signed.
-Pull requests that touch verified.json need maintainer review (see CODEOWNERS)."""
+Then run python tools/make_index.py so the app's updater accepts the new trust list.
+    Pull requests that touch verified.json need maintainer review (see CODEOWNERS)."""
 import argparse
 import datetime
 import json
