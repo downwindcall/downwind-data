@@ -1,0 +1,43 @@
+{
+ "icao": "KSEE",
+ "name": "Gillespie Field",
+ "tower_name": "Gillespie Field Tower",
+ "frequencies": {
+  "Tower": "120.700",
+  "Ground": "121.700",
+  "Clearance": "125.100",
+  "ATIS": "125.450"
+ },
+ "notes": [
+  "FAA 5010: RWY 17/35 TPA 800 ft AGL by day, 1000 ft AGL at night; RWY 27R TPA 1200 ft AGL right traffic daytime. Noise abatement in effect.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "17": "left",
+  "35": "left",
+  "27R": "right",
+  "27L": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "17": 3.7,
+  "35": 3.5,
+  "09L": 3.75,
+  "27R": 4.5
+ },
+ "glide_deg": 3.7,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

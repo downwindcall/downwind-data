@@ -1,0 +1,32 @@
+{
+ "icao": "KMYV",
+ "name": "Yuba County",
+ "frequencies": {
+  "CTAF": "123.050",
+  "UNICOM": "123.050"
+ },
+ "notes": [
+  "FAA 5010: the 400 ft TPA is for ultralights only; no other TPA published (1000 ft used).",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "14": "left",
+  "23": "left",
+  "32": "left",
+  "05": "left"
+ },
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "icao": "KMYF",
+ "name": "Montgomery-Gibbs Executive",
+ "tower_name": "Montgomery-Gibbs Executive Tower",
+ "frequencies": {
+  "Ground": "118.225",
+  "Tower": "119.200",
+  "UNICOM": "123.075",
+  "Clearance": "123.725",
+  "ATIS": "126.900"
+ },
+ "notes": [
+  "FAA 5010: TPA single-engine 1000 ft, multi-engine/turbo 1600 ft.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "23": "left",
+  "05": "left",
+  "10L": "left",
+  "28R": "right",
+  "10R": "right",
+  "28L": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "10L": 3.4,
+  "28R": 3.0
+ },
+ "glide_deg": 3.4,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

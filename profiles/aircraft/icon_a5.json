@@ -1,0 +1,140 @@
+{
+ "id": "icon_a5",
+ "name": "ICON A5",
+ "match": [
+  "ICON A5",
+  "ICON"
+ ],
+ "_note": "MEDIUM confidence. Limits, flap positions (0/15/30), rotate 50 and Vx/Vy come from the ICON A5 POH (ICA015523-A, sections 1.3, 2.2, 4.10, 5.1). The POH flies approaches on the AOA white line and gives no numeric approach speed; the FINAL band is built around the 58 KIAS 50 ft landing speed of section 5.12. Circuit bands are typical practice, not POH values. The A5 has retractable gear: gear calls are not modelled. Flap handle positions in MSFS were not checked in-sim.",
+ "_verified": false,
+ "carb_heat": false,
+ "flap_detents": [
+  0,
+  15,
+  30
+ ],
+ "flap_labels": [
+  "UP",
+  "15",
+  "30"
+ ],
+ "flap_words": [
+  "0",
+  "15",
+  "30"
+ ],
+ "rotate_kt": 50,
+ "limits": {
+  "vs0": 39,
+  "vs1": 43,
+  "vfe": 75,
+  "vno": 93,
+  "vne": 120
+ },
+ "targets": {
+  "TAKEOFF": {
+   "flaps": [
+    0,
+    15
+   ]
+  },
+  "CLIMB": {
+   "ias": [
+    55,
+    70
+   ],
+   "flaps": [
+    0,
+    15
+   ],
+   "track": 10,
+   "agl_max": "circuit"
+  },
+  "CROSSWIND": {
+   "ias": [
+    58,
+    72
+   ],
+   "flaps": [
+    0
+   ],
+   "agl_min": "turn",
+   "agl_max": "circuit"
+  },
+  "DOWNWIND": {
+   "ias": [
+    60,
+    75
+   ],
+   "flaps": [
+    0
+   ],
+   "agl": "circuit"
+  },
+  "DOWNWIND_LATE": {
+   "ias": [
+    58,
+    72
+   ],
+   "flaps": [
+    0,
+    15
+   ]
+  },
+  "BASE": {
+   "ias": [
+    56,
+    68
+   ],
+   "flaps": [
+    15,
+    30
+   ],
+   "agl_lo_ft": 350,
+   "agl_hi_ft": 850
+  },
+  "FINAL": {
+   "ias": [
+    54,
+    64
+   ],
+   "flaps": [
+    15,
+    30
+   ],
+   "track": 15
+  },
+  "FINAL_SHORT": {
+   "ias": [
+    52,
+    62
+   ],
+   "flaps": [
+    30
+   ],
+   "track": 15
+  },
+  "GOAROUND": {
+   "ias": [
+    55,
+    70
+   ],
+   "flaps": [
+    15
+   ],
+   "agl_max": "circuit"
+  }
+ },
+ "meta": {
+  "status": "community",
+  "updated": "2026-11-27",
+  "change_note": "New profile. Limits, flaps, rotate and climb speeds from the ICON A5 POH; circuit bands are typical practice anchored on the POH 50 ft landing speed.",
+  "sources": [
+   {
+    "title": "ICON A5 POH ICA015523-A (sections 1.3, 2.2, 4.10, 5.1, 5.12)",
+    "url": "https://www.iconaircraft.com/wp-content/uploads/2023/10/ICA015523-A_POH-A5-650.pdf",
+    "date": "2026-11-27"
+   }
+  ]
+ }
+}

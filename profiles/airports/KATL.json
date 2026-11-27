@@ -1,0 +1,54 @@
+{
+ "icao": "KATL",
+ "name": "Hartsfield/Jackson Atlanta Intl",
+ "tower_name": "Hartsfield/Jackson Atlanta Intl Tower",
+ "frequencies": {
+  "Clearance": "118.100",
+  "Tower": "119.100",
+  "ATIS": "119.650",
+  "Ground": "121.650",
+  "UNICOM": "122.950"
+ },
+ "notes": [
+  "FAA 5010: no airport-specific traffic pattern altitude published; 1000 ft AGL (FAA AC 90-66 recommendation) used.",
+  "Airline airport: pattern work is not normally available; values are for reference.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "10": "right",
+  "08R": "left",
+  "26L": "left",
+  "09L": "left",
+  "27R": "left",
+  "09R": "left",
+  "27L": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "10": 3.0,
+  "28": 3.0,
+  "08L": 3.0,
+  "26R": 3.0,
+  "08R": 3.0,
+  "26L": 3.0,
+  "09L": 3.0,
+  "27R": 3.0,
+  "09R": 3.0,
+  "27L": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

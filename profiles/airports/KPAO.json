@@ -1,0 +1,39 @@
+{
+ "icao": "KPAO",
+ "name": "Palo Alto",
+ "tower_name": "Palo Alto Tower",
+ "frequencies": {
+  "Tower": "118.600",
+  "UNICOM": "122.950",
+  "Ground": "125.000",
+  "ATIS": "135.275"
+ },
+ "notes": [
+  "FAA 5010: TPA 1000 ft W / 800 ft E of the field (AGL value here = 800). Noise-sensitive area SE to NW; rcmd at/above 1500 ft until crossing the Bayshore Freeway on arrival.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 800,
+ "default_side": "left",
+ "runway_sides": {
+  "13": "left",
+  "31": "right"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "13": 4.0,
+  "31": 4.0
+ },
+ "glide_deg": 4.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

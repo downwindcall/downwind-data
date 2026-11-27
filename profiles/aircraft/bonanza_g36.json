@@ -1,0 +1,143 @@
+{
+ "id": "bonanza_g36",
+ "name": "Beechcraft Bonanza G36",
+ "match": [
+  "G36"
+ ],
+ "_note": "MEDIUM confidence. Limits and approach 79 KIAS (flaps 30), VR 73, Vy 100 from the G36 POH figures as summarised by rotatepilot.com (POH 2008 rev 2011, sections 1-4; cross-checked against AOPA's 2013 G36 data table: Vs1 68, Vne 205). VFE is 154 at approach flaps (12 deg) and 124 at full flaps (30 deg); the lower value is stored. Circuit bands are typical practice. Retractable gear: gear calls and the 154 KIAS gear limit are not modelled. Flap handle positions in MSFS were not checked in-sim. The Bonanza V35 is a different profile (not included).",
+ "_verified": false,
+ "carb_heat": false,
+ "fuel_pump": true,
+ "flap_detents": [
+  0,
+  12,
+  30
+ ],
+ "flap_labels": [
+  "UP",
+  "APP",
+  "FULL"
+ ],
+ "flap_words": [
+  "0",
+  "12",
+  "30"
+ ],
+ "rotate_kt": 73,
+ "limits": {
+  "vs0": 61,
+  "vs1": 68,
+  "vfe": 124,
+  "vno": 167,
+  "vne": 205
+ },
+ "targets": {
+  "TAKEOFF": {
+   "flaps": [
+    0,
+    12
+   ]
+  },
+  "CLIMB": {
+   "ias": [
+    95,
+    110
+   ],
+   "flaps": [
+    0
+   ],
+   "track": 10,
+   "agl_max": "circuit"
+  },
+  "CROSSWIND": {
+   "ias": [
+    95,
+    110
+   ],
+   "flaps": [
+    0
+   ],
+   "agl_min": "turn",
+   "agl_max": "circuit"
+  },
+  "DOWNWIND": {
+   "ias": [
+    90,
+    110
+   ],
+   "flaps": [
+    0
+   ],
+   "agl": "circuit"
+  },
+  "DOWNWIND_LATE": {
+   "ias": [
+    88,
+    105
+   ],
+   "flaps": [
+    0,
+    12
+   ]
+  },
+  "BASE": {
+   "ias": [
+    84,
+    98
+   ],
+   "flaps": [
+    12
+   ],
+   "agl_lo_ft": 350,
+   "agl_hi_ft": 850
+  },
+  "FINAL": {
+   "ias": [
+    76,
+    86
+   ],
+   "flaps": [
+    12,
+    30
+   ],
+   "track": 15
+  },
+  "FINAL_SHORT": {
+   "ias": [
+    75,
+    82
+   ],
+   "flaps": [
+    30
+   ],
+   "track": 15
+  },
+  "GOAROUND": {
+   "ias": [
+    80,
+    100
+   ],
+   "flaps": [
+    12
+   ],
+   "agl_max": "circuit"
+  }
+ },
+ "meta": {
+  "status": "community",
+  "updated": "2026-11-27",
+  "change_note": "New profile. Limits, rotate and approach speed from the G36 POH figures; circuit bands are typical practice.",
+  "sources": [
+   {
+    "title": "Beechcraft G36 Bonanza POH/AFM 2008 rev 2011, sections 1-4 (as summarised by Rotate)",
+    "url": "https://rotatepilot.com/guides/beechcraft-bonanza-guide",
+    "date": "2026-11-27"
+   },
+   {
+    "title": "AOPA Pilot, Classically modern (G36 data table)",
+    "url": "https://www.aopa.org/news-and-media/all-news/2013/september/pilot/classically-modern",
+    "date": "2026-11-27"
+   }
+  ]
+ }
+}

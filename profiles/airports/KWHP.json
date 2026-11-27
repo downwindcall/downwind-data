@@ -1,0 +1,39 @@
+{
+ "icao": "KWHP",
+ "name": "Whiteman",
+ "tower_name": "Whiteman Tower",
+ "frequencies": {
+  "UNICOM": "122.950",
+  "Ground": "125.000",
+  "ATIS": "132.100",
+  "Tower": "135.000"
+ },
+ "notes": [
+  "FAA 5010: closed to helicopter training/pattern operations 2000-0800.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "12": "left",
+  "30": "right"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "12": 3.8,
+  "30": 3.8
+ },
+ "glide_deg": 3.8,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

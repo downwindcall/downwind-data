@@ -1,0 +1,143 @@
+{
+ "id": "dv20",
+ "name": "Diamond DV20 Katana",
+ "match": [
+  "DV20",
+  "DV 20"
+ ],
+ "_note": "LOW confidence. Limits (Vfe 81, Vno 118, Vne 161, Vs 41, Vs0 37, Vy 65) are from a secondary data table for the DV20/DA20-100; the DA20-C1 AFM (a different model: Vfe T/O 100 / LDG 78, Vne 164, normal approach 52 KIAS, go-around 58 KIAS) was used only to cross-check the flap names. A flying school checklist uses 65 KIAS on approach and 58 for go-around, so the FINAL band spans both (55-68). Rotate speed was not stored (no DV20 source). Flaps UP / T/O / LDG as on the DA40 profile. Confirm against your DV20 AFM.",
+ "_verified": false,
+ "carb_heat": false,
+ "flap_detents": [
+  0,
+  10,
+  20
+ ],
+ "flap_labels": [
+  "UP",
+  "T/O",
+  "LDG"
+ ],
+ "flap_words": [
+  "0",
+  "10",
+  "20"
+ ],
+ "limits": {
+  "vs0": 37,
+  "vs1": 41,
+  "vfe": 81,
+  "vno": 118,
+  "vne": 161
+ },
+ "targets": {
+  "TAKEOFF": {
+   "flaps": [
+    0,
+    10
+   ]
+  },
+  "CLIMB": {
+   "ias": [
+    65,
+    80
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "track": 10,
+   "agl_max": "circuit"
+  },
+  "CROSSWIND": {
+   "ias": [
+    65,
+    80
+   ],
+   "flaps": [
+    0
+   ],
+   "agl_min": "turn",
+   "agl_max": "circuit"
+  },
+  "DOWNWIND": {
+   "ias": [
+    70,
+    90
+   ],
+   "flaps": [
+    0
+   ],
+   "agl": "circuit"
+  },
+  "DOWNWIND_LATE": {
+   "ias": [
+    68,
+    80
+   ],
+   "flaps": [
+    0,
+    10
+   ]
+  },
+  "BASE": {
+   "ias": [
+    62,
+    74
+   ],
+   "flaps": [
+    10
+   ],
+   "agl_lo_ft": 350,
+   "agl_hi_ft": 850
+  },
+  "FINAL": {
+   "ias": [
+    55,
+    68
+   ],
+   "flaps": [
+    10,
+    20
+   ],
+   "track": 15
+  },
+  "FINAL_SHORT": {
+   "ias": [
+    52,
+    62
+   ],
+   "flaps": [
+    20
+   ],
+   "track": 15
+  },
+  "GOAROUND": {
+   "ias": [
+    55,
+    70
+   ],
+   "flaps": [
+    10
+   ],
+   "agl_max": "circuit"
+  }
+ },
+ "meta": {
+  "status": "community",
+  "updated": "2026-11-27",
+  "change_note": "New profile, low confidence: limits from a secondary DV20 data table; approach band spans AFM (DA20-C1) and school-checklist values.",
+  "sources": [
+   {
+    "title": "Diamond DV-20 Katana specifications (pilotfriend)",
+    "url": "https://pilotfriend.com/aircraft%20performance/Diamond/1.htm",
+    "date": "2026-11-27"
+   },
+   {
+    "title": "DA20-C1 Airplane Flight Manual (Keilir), sections 2.2, 4.2, 4.4.11-12",
+    "url": "https://www.keilir.net/static/files/Flugakademian/Diamond/DA20_C1_AFM_incl_R23.pdf",
+    "date": "2026-11-27"
+   }
+  ]
+ }
+}

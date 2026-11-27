@@ -1,0 +1,41 @@
+{
+ "icao": "KHWD",
+ "name": "Hayward Executive",
+ "tower_name": "Hayward Executive Tower",
+ "frequencies": {
+  "Tower": "120.200",
+  "Ground": "121.400",
+  "UNICOM": "122.950",
+  "ATIS": "126.700",
+  "Clearance": "128.050"
+ },
+ "notes": [
+  "FAA 5010: TPA 600 ft AGL except RWY 10L/28R 800 ft AGL.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 600,
+ "default_side": "right",
+ "runway_sides": {
+  "10L": "left",
+  "28R": "right",
+  "10R": "right"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "10L": 3.0,
+  "28R": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}
