@@ -1,0 +1,23 @@
+{
+ "_note": "Generic numeric defaults for any field without its own file. A file profiles/airports/<ICAO>.json overrides any of these (see profiles/README.md). Wording lives in /lang.",
+ "circuit_agl_ft": 1000,
+ "turn_crosswind_agl_ft": 500,
+ "downwind_call_at": "midfield",
+ "base_turn_agl_ft": 700,
+ "final_agl_ft": 500,
+ "circuit": {
+  "offset_nm": null,
+  "base_along_nm": null,
+  "final_side_nm": null,
+  "short_final_nm": null,
+  "lead_nm": 0.06,
+  "final_trim_nm": 1.2,
+  "lead_s": 3.0
+ },
+ "papi": {
+  "aim_ft": 1000,
+  "window_nm": 5.0,
+  "min_agl_ft": 50
+ },
+ "check_lights": true
+}

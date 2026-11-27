@@ -1,0 +1,7 @@
+# Every change needs a review from the owner.
+*                       @downwindcall
+/validator.py           @downwindcall
+/tools/                 @downwindcall
+/tests/                 @downwindcall
+/.github/               @downwindcall
+/profiles/verified.json @downwindcall

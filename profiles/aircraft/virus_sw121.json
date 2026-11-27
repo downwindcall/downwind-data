@@ -1,0 +1,144 @@
+{
+ "id": "virus_sw121",
+ "name": "Pipistrel Virus SW 121",
+ "match": [
+  "VIRUS",
+  "SW121",
+  "SW 121"
+ ],
+ "_note": "MEDIUM-LOW CONFIDENCE. Published: Vy 78 KIAS, VFE 81 KIAS, stall flaps up about 50 KCAS, normal approach 60-65 kt with flaps +2 (+1 in crosswind). Rotation speed and the flap setting for takeoff were not found, so the rotate value is an estimate. Check against the Virus POH. Rotax 912, constant-speed prop: no carb heat prompts.",
+ "_verified": false,
+ "_confidence": "Vy/VFE/approach published; rotate and leg bands estimated",
+ "_sources": [
+  "Pipistrel Virus SW 121 specifications (Vy 78, VFE 81 KIAS; stall about 50 KCAS)",
+  "BEA report G-OVSI: normal approach 60-65 kt with flaps +2, +1 in crosswind",
+  "Rotation speed: estimate"
+ ],
+ "carb_heat": false,
+ "flap_detents": [
+  0,
+  10,
+  20
+ ],
+ "flap_labels": [
+  "0",
+  "+1",
+  "+2"
+ ],
+ "flap_words": [
+  "0",
+  "+1",
+  "+2"
+ ],
+ "flap_calls": {
+  "abeam": [
+   1
+  ],
+  "base": [
+   1
+  ],
+  "tgo": [
+   1
+  ],
+  "ga": [
+   1
+  ]
+ },
+ "targets": {
+  "TAKEOFF": {
+   "flaps": [
+    0,
+    10
+   ]
+  },
+  "CLIMB": {
+   "ias": [
+    70,
+    80
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "track": 10,
+   "agl_max": "circuit"
+  },
+  "CROSSWIND": {
+   "ias": [
+    70,
+    85
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "agl_min": "turn",
+   "agl_max": "circuit"
+  },
+  "DOWNWIND": {
+   "ias": [
+    72,
+    88
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "agl": "circuit"
+  },
+  "DOWNWIND_LATE": {
+   "ias": [
+    68,
+    80
+   ],
+   "flaps": [
+    0,
+    10
+   ]
+  },
+  "BASE": {
+   "ias": [
+    65,
+    75
+   ],
+   "flaps": [
+    10,
+    20
+   ],
+   "agl_lo_ft": 350,
+   "agl_hi_ft": 850
+  },
+  "FINAL": {
+   "ias": [
+    60,
+    66
+   ],
+   "flaps": [
+    20
+   ],
+   "track": 15
+  },
+  "FINAL_SHORT": {
+   "ias": [
+    60,
+    65
+   ],
+   "flaps": [
+    20
+   ],
+   "track": 15
+  },
+  "GOAROUND": {
+   "ias": [
+    65,
+    78
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "agl_max": "circuit"
+  }
+ },
+ "rotate_kt": 55
+}

@@ -1,0 +1,41 @@
+{
+  "_how_to_use": "Copy this file to <ICAO>.json (for example EHLE.json). The file name IS the airport code. Keep only the keys you want to change: anything you leave out uses profiles/defaults.json. Keys starting with _ are comments.",
+  "icao": "XXXX",
+  "name": "Airport name",
+  "tower_name": "Xxxx Tower",
+  "frequencies": {"Tower": "000.000", "Ground": "000.000", "ATIS": "000.000"},
+  "notes": ["Free text shown on the Notes card, one line each."],
+
+  "circuit_agl_ft": 1000,
+  "_circuit_agl_ft": "Circuit height above the field in feet (AMSL minus field elevation). Crosswind, base and final heights scale with it.",
+  "downwind_call_at": "midfield",
+  "_downwind_call_at": "midfield or abeam: where the downwind radio call is prompted.",
+  "default_side": "left",
+  "runway_sides": {"09": "left", "27": "right"},
+  "_runway_sides": "Circuit direction per runway end (left or right). Overrides default_side. Your Settings 'side' choice overrides both.",
+
+  "circuit": {
+    "offset_nm": 0.6,
+    "base_along_nm": 0.4,
+    "final_side_nm": 0.3,
+    "short_final_nm": 0.5,
+    "lead_nm": 0.06,
+    "final_trim_nm": 1.2,
+    "_offset_nm": "Distance of the downwind leg from the runway centreline (NM). Downwind is recognised at 75% of this.",
+    "crosswind_along_nm": 0.4,
+    "_crosswind_along_nm": "Upwind-to-crosswind turn starts this far BEYOND the departure end (NM). Optional: defaults to base_along_nm. The turn is called by position, never below the safe turn height.",
+    "_base_along_nm": "Downwind-to-base turn starts this far before the approach threshold (NM, measured along the runway). Leave out for the generic 45-degrees-behind-the-wing rule.",
+    "_final_side_nm": "Base-to-final turn starts when you are this far from the extended centreline (NM). Roughly the turn radius. Leave out for 0.35.",
+    "_short_final_nm": "Short final is called this far from the threshold (NM). Leave out to use 300 ft height instead.",
+    "_lead_nm": "Turn calls are made this much early so the spoken call finishes in time (about 3 seconds of flying).",
+    "_final_trim_nm": "Trim-for-final reminder is given once inside this distance."
+  },
+
+  "papi": true,
+  "glide_deg": 3.0,
+  "glide_by_rwy": {},
+  "papi_cfg": {"aim_ft": 1000, "window_nm": 5.0, "min_agl_ft": 50},
+  "_papi": "papi: does this field have PAPI lights (true/false). glide_deg: the slope (usually 3.0). glide_by_rwy is written by the 'Sync PAPI' buttons. papi_cfg: aim_ft = distance of the PAPI/aim point past the threshold, window_nm = distance at which the PAPI picture starts.",
+
+  "calls": {"_": "Optional per-field radio call overrides, same keys as 'calls' in lang/en.json."}
+}

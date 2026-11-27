@@ -1,0 +1,37 @@
+{
+ "icao": "EHLE",
+ "name": "Lelystad",
+ "_note": "Frequencies per current AIP listing. Circuits per AIP: 05 left-hand, 23 right-hand, same footprint for the 500 ft AMSL training circuit and the 1000 ft AMSL standard circuit. 'circuit' values measured from the VAC; see profiles/README.md.",
+ "circuit_agl_ft": 513,
+ "downwind_call_at": "midfield",
+ "default_side": "left",
+ "runway_sides": {
+  "23": "right",
+  "05": "left"
+ },
+ "frequencies": {
+  "Tower": "135.180",
+  "Delivery": "123.680",
+  "Arrival": "134.530",
+  "ATIS": "120.730"
+ },
+ "tower_name": "Lelystad Tower",
+ "notes": [
+  "AIP EHLE: circuits are RWY 05 left-hand and RWY 23 right-hand (fixed, entry/exit routes never change).",
+  "AIP: standard circuit altitude 1000 ft AMSL (inbound VFR); VFR training circuit is 500 ft AMSL. Orange ground markers are the turning points downwind/base and base/final.",
+  "VAC note: only turn base after receiving a number in the sequence and the traffic to follow."
+ ],
+ "papi": true,
+ "glide_deg": 3,
+ "circuit": {
+  "offset_nm": 0.53,
+  "base_along_nm": 0.38,
+  "final_side_nm": 0.26,
+  "short_final_nm": 0.5,
+  "_note": "Measured from the VAC (training circuit loops), scaled with the 2700 m runway; approx +-10%. Downwind offset 0.53 NM, turn radius ~0.26 NM, loop starts 0.38 NM before the approach threshold."
+ },
+ "meta": {
+  "status": "community",
+  "updated": "2026-11-27"
+ }
+}

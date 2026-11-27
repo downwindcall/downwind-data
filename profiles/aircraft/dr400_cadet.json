@@ -1,0 +1,144 @@
+{
+ "id": "dr400_cadet",
+ "name": "Robin DR400/100 Cadet",
+ "match": [
+  "DR400",
+  "DR 400"
+ ],
+ "_note": "LOW CONFIDENCE. The only POH data found is for the DR400/120-180 family (Vy 78 flaps up, Vx 65, final approach 62 KIAS landing flaps, takeoff speed about 54 KIAS); the Cadet is lighter, so the final bands are lowered a little. Check against your club's Cadet or DR400 POH. Flaps: UP, T/O (1st notch), LDG (2nd notch).",
+ "_verified": false,
+ "_confidence": "low: Cadet POH not found, DR400 family values adjusted",
+ "_sources": [
+  "Robin DR400/120D-180R-200R POH Supplement, Issue 3 (2014), Section 4 normal operating speeds",
+  "BEA reports on DR400-160: takeoff 100 km/h, initial climb 130 km/h",
+  "Cadet (DR400/100) POH not found: bands adjusted by judgement"
+ ],
+ "carb_heat": false,
+ "flap_detents": [
+  0,
+  10,
+  20
+ ],
+ "flap_labels": [
+  "UP",
+  "T/O",
+  "LDG"
+ ],
+ "flap_words": [
+  "0",
+  "@takeoff",
+  "@landing"
+ ],
+ "flap_calls": {
+  "abeam": [
+   1
+  ],
+  "base": [
+   1
+  ],
+  "tgo": [
+   1
+  ],
+  "ga": [
+   1
+  ]
+ },
+ "targets": {
+  "TAKEOFF": {
+   "flaps": [
+    10
+   ]
+  },
+  "CLIMB": {
+   "ias": [
+    70,
+    80
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "track": 10,
+   "agl_max": "circuit"
+  },
+  "CROSSWIND": {
+   "ias": [
+    75,
+    88
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "agl_min": "turn",
+   "agl_max": "circuit"
+  },
+  "DOWNWIND": {
+   "ias": [
+    75,
+    92
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "agl": "circuit"
+  },
+  "DOWNWIND_LATE": {
+   "ias": [
+    70,
+    85
+   ],
+   "flaps": [
+    0,
+    10
+   ]
+  },
+  "BASE": {
+   "ias": [
+    66,
+    76
+   ],
+   "flaps": [
+    10,
+    20
+   ],
+   "agl_lo_ft": 350,
+   "agl_hi_ft": 850
+  },
+  "FINAL": {
+   "ias": [
+    58,
+    68
+   ],
+   "flaps": [
+    10,
+    20
+   ],
+   "track": 15
+  },
+  "FINAL_SHORT": {
+   "ias": [
+    58,
+    66
+   ],
+   "flaps": [
+    20
+   ],
+   "track": 15
+  },
+  "GOAROUND": {
+   "ias": [
+    65,
+    80
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "agl_max": "circuit"
+  }
+ },
+ "rotate_kt": 54,
+ "fuel_pump": true
+}

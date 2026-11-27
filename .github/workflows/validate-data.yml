@@ -1,0 +1,111 @@
+# Checks every contribution to airfield and aircraft data.
+# SECURITY: this uses `pull_request` (never `pull_request_target`), read-only permissions and no secrets, and the validator
+# that judges a pull request is the copy from the BASE branch, so a contribution cannot weaken its own checks.
+name: Validate data
+
+on:
+  pull_request:
+    paths: ["profiles/**", "validator.py", "tools/**", "tests/**", ".github/**"]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Contribution (untrusted)
+        uses: actions/checkout@v4
+        with:
+          path: pr
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Trusted rules (base branch)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha || github.sha }}
+          path: trusted
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Contributors may only change data files
+        if: github.event_name == 'pull_request' && github.event.pull_request.user.login != github.repository_owner
+        working-directory: pr
+        run: |
+          bad=$(git diff --name-only "${{ github.event.pull_request.base.sha }}" HEAD \
+                | grep -Ev '^profiles/(airports|aircraft)/[A-Za-z0-9_]+\.json$' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::Only airfield and aircraft files can be changed in a contribution. Not allowed:"
+            echo "$bad"
+            exit 1
+          fi
+
+      - name: Fetch airport data (OurAirports, public domain)
+        run: |
+          mkdir -p data
+          for f in airports runways; do
+            curl -sSfL --retry 3 -o "data/$f.csv" "https://davidmegginson.github.io/ourairports-data/$f.csv"
+          done
+
+      - name: Unit tests (trusted copy)
+        working-directory: trusted
+        run: python tests/test_validator.py
+
+      - name: Validate profiles
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            python trusted/validator.py pr/profiles --base trusted/profiles --data data --mode submit --json result.json
+          else
+            python trusted/validator.py pr/profiles --data data --mode local --json result.json
+          fi
+
+      - name: Draw circuits for reviewers
+        if: always() && github.event_name == 'pull_request'
+        run: |
+          mkdir -p previews
+          for f in $(cd pr && git diff --name-only "${{ github.event.pull_request.base.sha }}" HEAD -- 'profiles/airports/*.json'); do
+            [ -f "pr/$f" ] || continue
+            python trusted/tools/preview_circuit.py "pr/$f" --base "trusted/$f" --data data --out previews || true
+          done
+
+      - name: Summary for the reviewer
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os
+          print("## Data check\n")
+          try:
+              rep = json.load(open("result.json"))
+          except Exception:
+              print("No result file: the check did not run.")
+              raise SystemExit
+          rows = [(r["file"], i["level"], i["path"] or "(file)", i["msg"]) for r in rep for i in r["issues"]]
+          if not rows:
+              print("All files passed.")
+          else:
+              print("| File | Level | Field | Message |\n|---|---|---|---|")
+              for f, l, p, m in rows:
+                  print(f"| {f} | {'**ERROR**' if l == 'error' else 'warning'} | `{p}` | {m.replace('|', '/')} |")
+              if any("SIDE CHANGE" in m for *_, m in rows):
+                  print("\n> **Circuit side changes are in this contribution. A maintainer must check the source before merging.**")
+          print("\nCircuit pictures are attached to this run as the `previews` artifact.")
+          PY
+
+      - name: Attach circuit pictures
+        if: always() && github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: previews
+          path: previews
+          if-no-files-found: ignore

@@ -1,0 +1,115 @@
+{
+ "id": "c172_g1000",
+ "name": "Cessna 172S (G1000, fuel injected)",
+ "match": [
+  "G1000",
+  "172S",
+  "SKYHAWK"
+ ],
+ "_note": "Speeds from the Cessna 172S POH normal procedures (KIAS). No carburetor, so no carb heat prompts. Edit to match your school's SOP.",
+ "carb_heat": false,
+ "flap_detents": [
+  0,
+  10,
+  20,
+  30
+ ],
+ "targets": {
+  "TAKEOFF": {
+   "flaps": [
+    0,
+    10
+   ]
+  },
+  "CLIMB": {
+   "ias": [
+    70,
+    85
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "track": 10,
+   "agl_max": "circuit"
+  },
+  "CROSSWIND": {
+   "ias": [
+    70,
+    85
+   ],
+   "flaps": [
+    0
+   ],
+   "agl_min": "turn",
+   "agl_max": "circuit"
+  },
+  "DOWNWIND": {
+   "ias": [
+    80,
+    95
+   ],
+   "flaps": [
+    0
+   ],
+   "agl": "circuit"
+  },
+  "DOWNWIND_LATE": {
+   "ias": [
+    70,
+    90
+   ],
+   "flaps": [
+    0,
+    10
+   ]
+  },
+  "BASE": {
+   "ias": [
+    65,
+    75
+   ],
+   "flaps": [
+    10,
+    20
+   ],
+   "agl_lo_ft": 350,
+   "agl_hi_ft": 850
+  },
+  "FINAL": {
+   "ias": [
+    60,
+    70
+   ],
+   "flaps": [
+    20,
+    30
+   ],
+   "track": 15
+  },
+  "FINAL_SHORT": {
+   "ias": [
+    60,
+    65
+   ],
+   "flaps": [
+    20,
+    30
+   ],
+   "track": 15
+  },
+  "GOAROUND": {
+   "ias": [
+    55,
+    75
+   ],
+   "flaps": [
+    10,
+    20
+   ],
+   "agl_max": "circuit"
+  }
+ },
+ "rotate_kt": 55,
+ "fuel_pump": true
+}

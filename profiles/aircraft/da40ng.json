@@ -1,0 +1,143 @@
+{
+ "id": "da40ng",
+ "name": "Diamond DA40 NG",
+ "match": [
+  "DA40",
+  "DA 40"
+ ],
+ "_note": "Speeds from the Diamond Flight Training DA40 NG Nxi checklist at about 1100 kg (rotate 61, Vy 72 with T/O flaps, cruise climb 88, Vref 74 T/O flaps / 72 landing flaps). Circuit-leg bands are typical training practice, not POH values: edit to match your school's SOP. Diesel with FADEC: no carb heat.",
+ "_verified": false,
+ "_confidence": "speeds POH-grade at ~1100 kg; circuit legs typical",
+ "_sources": [
+  "Diamond Flight Training, DA40 NG Normal Procedures/Checklist Nxi, ed. 1.3 (weights 1000-1280 kg): rotation, V50, Vy, cruise climb, Vref",
+  "Circuit-leg bands: typical practice (not published)"
+ ],
+ "carb_heat": false,
+ "flap_detents": [
+  0,
+  10,
+  20
+ ],
+ "flap_labels": [
+  "UP",
+  "T/O",
+  "LDG"
+ ],
+ "flap_words": [
+  "0",
+  "@takeoff",
+  "@landing"
+ ],
+ "flap_calls": {
+  "abeam": [
+   1
+  ],
+  "base": [
+   1
+  ],
+  "tgo": [
+   1
+  ],
+  "ga": [
+   1
+  ]
+ },
+ "targets": {
+  "TAKEOFF": {
+   "flaps": [
+    10
+   ]
+  },
+  "CLIMB": {
+   "ias": [
+    72,
+    88
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "track": 10,
+   "agl_max": "circuit"
+  },
+  "CROSSWIND": {
+   "ias": [
+    78,
+    92
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "agl_min": "turn",
+   "agl_max": "circuit"
+  },
+  "DOWNWIND": {
+   "ias": [
+    80,
+    95
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "agl": "circuit"
+  },
+  "DOWNWIND_LATE": {
+   "ias": [
+    74,
+    90
+   ],
+   "flaps": [
+    0,
+    10
+   ]
+  },
+  "BASE": {
+   "ias": [
+    74,
+    84
+   ],
+   "flaps": [
+    10,
+    20
+   ],
+   "agl_lo_ft": 350,
+   "agl_hi_ft": 850
+  },
+  "FINAL": {
+   "ias": [
+    72,
+    80
+   ],
+   "flaps": [
+    10,
+    20
+   ],
+   "track": 15
+  },
+  "FINAL_SHORT": {
+   "ias": [
+    72,
+    78
+   ],
+   "flaps": [
+    10,
+    20
+   ],
+   "track": 15
+  },
+  "GOAROUND": {
+   "ias": [
+    72,
+    90
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "agl_max": "circuit"
+  }
+ },
+ "rotate_kt": 61
+}

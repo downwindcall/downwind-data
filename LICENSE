@@ -1,0 +1,14 @@
+Data (everything under profiles/): Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/legalcode
+Attribute as: "Downwind Call data, downwindcall.com".
+
+By submitting a contribution you confirm that you made it yourself or took it from a source you are allowed to use,
+that you are not copying a copyrighted chart or publication (measured values and facts are fine), and that you
+license it under CC BY 4.0.
+
+Checking tools (validator.py, tests/, tools/, .github/): Copyright (c) 2026 Downwind Call. All rights reserved.
+Provided only to check contributions to this repository. No licence to copy, modify or redistribute them.
+
+Airport and runway reference data used by the checks is from OurAirports (public domain).
+
+THE DATA IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. FOR FLIGHT SIMULATION ONLY.

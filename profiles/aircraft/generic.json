@@ -1,0 +1,121 @@
+{
+ "id": "generic",
+ "name": "Unknown aircraft: generic 172 numbers (pick a profile in Settings)",
+ "match": [],
+ "_note": "Fallback for any aircraft without its own profile. Uses Cessna 172 numbers, so speeds may be wrong for your aircraft: choose a profile in Settings or copy this file and edit it.",
+ "carb_heat": true,
+ "carb_simvar": "GENERAL ENG ANTI ICE POSITION:1",
+ "flap_detents": [
+  0,
+  10,
+  20,
+  30
+ ],
+ "targets": {
+  "TAKEOFF": {
+   "flaps": [
+    0,
+    10
+   ],
+   "carb": false
+  },
+  "CLIMB": {
+   "ias": [
+    70,
+    85
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "carb": false,
+   "track": 10,
+   "agl_max": "circuit"
+  },
+  "CROSSWIND": {
+   "ias": [
+    70,
+    85
+   ],
+   "flaps": [
+    0
+   ],
+   "carb": false,
+   "agl_min": "turn",
+   "agl_max": "circuit"
+  },
+  "DOWNWIND": {
+   "ias": [
+    80,
+    95
+   ],
+   "flaps": [
+    0
+   ],
+   "carb": false,
+   "agl": "circuit"
+  },
+  "DOWNWIND_LATE": {
+   "ias": [
+    70,
+    90
+   ],
+   "flaps": [
+    0,
+    10
+   ],
+   "carb": true
+  },
+  "BASE": {
+   "ias": [
+    65,
+    75
+   ],
+   "flaps": [
+    10,
+    20
+   ],
+   "carb": true,
+   "agl_lo_ft": 350,
+   "agl_hi_ft": 850
+  },
+  "FINAL": {
+   "ias": [
+    60,
+    70
+   ],
+   "flaps": [
+    20,
+    30
+   ],
+   "carb": true,
+   "track": 15
+  },
+  "FINAL_SHORT": {
+   "ias": [
+    60,
+    65
+   ],
+   "flaps": [
+    20,
+    30
+   ],
+   "carb": true,
+   "track": 15
+  },
+  "GOAROUND": {
+   "ias": [
+    55,
+    75
+   ],
+   "flaps": [
+    10,
+    20
+   ],
+   "carb": false,
+   "agl_max": "circuit"
+  }
+ },
+ "rotate_kt": 55,
+ "_generic": true
+}

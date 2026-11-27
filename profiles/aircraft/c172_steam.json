@@ -1,0 +1,122 @@
+{
+  "id": "c172_steam",
+  "name": "Cessna 172 (steam gauges, carburetor)",
+  "match": [
+    "172"
+  ],
+  "_note": "Speeds from the Cessna 172N/R POH normal procedures (KIAS). Edit to match your school's SOP.",
+  "carb_heat": true,
+  "carb_simvar": "GENERAL ENG ANTI ICE POSITION:1",
+  "flap_detents": [
+    0,
+    10,
+    20,
+    30
+  ],
+  "targets": {
+    "TAKEOFF": {
+      "flaps": [
+        0,
+        10
+      ],
+      "carb": false
+    },
+    "CLIMB": {
+      "ias": [
+        70,
+        85
+      ],
+      "flaps": [
+        0,
+        10
+      ],
+      "carb": false,
+      "track": 10,
+      "agl_max": "circuit"
+    },
+    "CROSSWIND": {
+      "ias": [
+        70,
+        85
+      ],
+      "flaps": [
+        0
+      ],
+      "carb": false,
+      "agl_min": "turn",
+      "agl_max": "circuit"
+    },
+    "DOWNWIND": {
+      "ias": [
+        80,
+        95
+      ],
+      "flaps": [
+        0
+      ],
+      "carb": false,
+      "agl": "circuit"
+    },
+    "DOWNWIND_LATE": {
+      "ias": [
+        70,
+        90
+      ],
+      "flaps": [
+        0,
+        10
+      ],
+      "carb": true
+    },
+    "BASE": {
+      "ias": [
+        65,
+        75
+      ],
+      "flaps": [
+        10,
+        20
+      ],
+      "carb": true,
+      "agl_lo_ft": 350,
+      "agl_hi_ft": 850
+    },
+    "FINAL": {
+      "ias": [
+        60,
+        70
+      ],
+      "flaps": [
+        20,
+        30
+      ],
+      "carb": true,
+      "track": 15
+    },
+    "FINAL_SHORT": {
+      "ias": [
+        60,
+        65
+      ],
+      "flaps": [
+        20,
+        30
+      ],
+      "carb": true,
+      "track": 15
+    },
+    "GOAROUND": {
+      "ias": [
+        55,
+        75
+      ],
+      "flaps": [
+        10,
+        20
+      ],
+      "carb": false,
+      "agl_max": "circuit"
+    }
+  },
+  "rotate_kt": 55
+}

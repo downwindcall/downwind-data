@@ -1,0 +1,142 @@
+{
+ "id": "sr22",
+ "name": "Cirrus SR22",
+ "match": [
+  "SR22"
+ ],
+ "_note": "Speeds from the Cirrus SR22 POH Section 4 (rotate 70 with 50% flaps, 78 obstacle, approach 90-95 flaps up / 85-90 at 50% / 80-85 at 100%, go-around 80 with 50%). Climb and downwind bands are typical practice. Fuel-injected: no carb heat. Gear is fixed; Cirrus parachute (CAPS) not modelled here.",
+ "_verified": false,
+ "_confidence": "approach/rotate/go-around POH-grade; climb and downwind typical",
+ "_sources": [
+  "Cirrus SR22 Pilot's Operating Handbook, Section 4 Normal Procedures (airspeeds for normal operation, normal landing 80-85 KIAS 100% flaps)",
+  "Cirrus FOM: flaps to 0% at 80 KIAS after takeoff",
+  "Downwind/climb bands: typical practice (not published)"
+ ],
+ "carb_heat": false,
+ "flap_detents": [
+  0,
+  50,
+  100
+ ],
+ "flap_labels": [
+  "0%",
+  "50%",
+  "100%"
+ ],
+ "flap_words": [
+  "0",
+  "50%",
+  "100%"
+ ],
+ "flap_calls": {
+  "abeam": [
+   1
+  ],
+  "base": [
+   1
+  ],
+  "tgo": [
+   1
+  ],
+  "ga": [
+   1
+  ]
+ },
+ "targets": {
+  "TAKEOFF": {
+   "flaps": [
+    50
+   ]
+  },
+  "CLIMB": {
+   "ias": [
+    80,
+    100
+   ],
+   "flaps": [
+    0,
+    50
+   ],
+   "track": 10,
+   "agl_max": "circuit"
+  },
+  "CROSSWIND": {
+   "ias": [
+    85,
+    105
+   ],
+   "flaps": [
+    0,
+    50
+   ],
+   "agl_min": "turn",
+   "agl_max": "circuit"
+  },
+  "DOWNWIND": {
+   "ias": [
+    90,
+    110
+   ],
+   "flaps": [
+    0,
+    50
+   ],
+   "agl": "circuit"
+  },
+  "DOWNWIND_LATE": {
+   "ias": [
+    85,
+    100
+   ],
+   "flaps": [
+    0,
+    50
+   ]
+  },
+  "BASE": {
+   "ias": [
+    85,
+    90
+   ],
+   "flaps": [
+    50,
+    100
+   ],
+   "agl_lo_ft": 350,
+   "agl_hi_ft": 850
+  },
+  "FINAL": {
+   "ias": [
+    80,
+    85
+   ],
+   "flaps": [
+    100
+   ],
+   "track": 15
+  },
+  "FINAL_SHORT": {
+   "ias": [
+    80,
+    85
+   ],
+   "flaps": [
+    100
+   ],
+   "track": 15
+  },
+  "GOAROUND": {
+   "ias": [
+    80,
+    95
+   ],
+   "flaps": [
+    0,
+    50
+   ],
+   "agl_max": "circuit"
+  }
+ },
+ "rotate_kt": 70,
+ "fuel_pump": true
+}
