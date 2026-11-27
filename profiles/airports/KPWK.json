@@ -1,0 +1,44 @@
+{
+ "icao": "KPWK",
+ "name": "Chicago Executive",
+ "tower_name": "Chicago Executive Tower",
+ "frequencies": {
+  "Clearance": "124.700",
+  "Tower": "119.900",
+  "Ground": "121.700",
+  "UNICOM": "122.950",
+  "ATIS": "124.200"
+ },
+ "notes": [
+  "FAA 5010: no airport-specific traffic pattern altitude published; 1000 ft AGL (FAA AC 90-66 recommendation) used.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "12": "left",
+  "16": "left",
+  "30": "right",
+  "34": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "12": 3.0,
+  "16": 3.0,
+  "30": 3.0,
+  "34": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "icao": "KBVS",
+ "name": "Skagit Regional",
+ "frequencies": {
+  "CTAF": "123.075",
+  "UNICOM": "123.075"
+ },
+ "notes": [
+  "FAA 5010: ultralight TPA 500 ft AGL; no other TPA published (1000 ft used).",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "11": "left",
+  "22": "left",
+  "29": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "11": 3.0,
+  "22": 3.0,
+  "29": 3.0,
+  "04": 4.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

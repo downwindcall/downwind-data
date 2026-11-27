@@ -1,0 +1,42 @@
+{
+ "icao": "KPSP",
+ "name": "Palm Springs Intl",
+ "tower_name": "Palm Springs Intl Tower",
+ "frequencies": {
+  "Tower": "119.700",
+  "Ground": "121.900",
+  "UNICOM": "122.950",
+  "ATIS": "124.650",
+  "Clearance": "128.350"
+ },
+ "notes": [
+  "FAA 5010: TPA 1000 ft AGL small aircraft, 1500 ft AGL large aircraft.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "right",
+ "runway_sides": {
+  "31R": "right",
+  "31L": "right"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "13L": 3.2,
+  "31R": 3.2,
+  "13R": 3.0,
+  "31L": 3.0
+ },
+ "glide_deg": 3.2,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

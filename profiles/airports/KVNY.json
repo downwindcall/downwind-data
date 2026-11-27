@@ -1,0 +1,43 @@
+{
+ "icao": "KVNY",
+ "name": "Van Nuys",
+ "tower_name": "Van Nuys Tower",
+ "frequencies": {
+  "Tower": "119.300",
+  "Ground": "121.700",
+  "UNICOM": "122.950",
+  "Clearance": "126.600",
+  "ATIS": "127.550"
+ },
+ "notes": [
+  "FAA 5010: TPA RWY 16R/34L 1200 ft, RWY 16L/34R 800 ft (AGL value here = 800 for 16L/34R). 16L is left-hand, 16R right-hand.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 800,
+ "default_side": "left",
+ "runway_sides": {
+  "16L": "left",
+  "34R": "right",
+  "16R": "right",
+  "34L": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "34R": 3.0,
+  "16R": 3.5,
+  "34L": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

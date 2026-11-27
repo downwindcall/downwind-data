@@ -1,0 +1,141 @@
+{
+ "id": "baron_g58",
+ "name": "Beechcraft Baron G58",
+ "match": [
+  "G58"
+ ],
+ "_note": "LOW confidence. Limits (VFE 152 approach / 122 full, VNO 195, VNE 223, VMC 84, VYSE 101, VR 85) are from a secondary summary of the G58 POH that does not cite sections; the POH extract for the earlier B58 also shows VNE 223. Stall speeds were NOT stored because sources disagree (Vs0 73 to 75). No approach speed was found: the FINAL band is derived as about 1.3 x Vs0 (~97 KIAS) and is typical practice only. Twin: engine-out speeds (VMC, VYSE) and retractable gear are not modelled. Check against your G58 POH before relying on it.",
+ "_verified": false,
+ "carb_heat": false,
+ "fuel_pump": true,
+ "flap_detents": [
+  0,
+  15,
+  30
+ ],
+ "flap_labels": [
+  "UP",
+  "APP",
+  "FULL"
+ ],
+ "flap_words": [
+  "0",
+  "15",
+  "30"
+ ],
+ "rotate_kt": 85,
+ "limits": {
+  "vfe": 122,
+  "vno": 195,
+  "vne": 223
+ },
+ "targets": {
+  "TAKEOFF": {
+   "flaps": [
+    0,
+    15
+   ]
+  },
+  "CLIMB": {
+   "ias": [
+    95,
+    110
+   ],
+   "flaps": [
+    0
+   ],
+   "track": 10,
+   "agl_max": "circuit"
+  },
+  "CROSSWIND": {
+   "ias": [
+    100,
+    115
+   ],
+   "flaps": [
+    0
+   ],
+   "agl_min": "turn",
+   "agl_max": "circuit"
+  },
+  "DOWNWIND": {
+   "ias": [
+    100,
+    125
+   ],
+   "flaps": [
+    0
+   ],
+   "agl": "circuit"
+  },
+  "DOWNWIND_LATE": {
+   "ias": [
+    95,
+    115
+   ],
+   "flaps": [
+    0,
+    15
+   ]
+  },
+  "BASE": {
+   "ias": [
+    92,
+    108
+   ],
+   "flaps": [
+    15
+   ],
+   "agl_lo_ft": 350,
+   "agl_hi_ft": 850
+  },
+  "FINAL": {
+   "ias": [
+    90,
+    100
+   ],
+   "flaps": [
+    15,
+    30
+   ],
+   "track": 15
+  },
+  "FINAL_SHORT": {
+   "ias": [
+    88,
+    98
+   ],
+   "flaps": [
+    30
+   ],
+   "track": 15
+  },
+  "GOAROUND": {
+   "ias": [
+    95,
+    110
+   ],
+   "flaps": [
+    15
+   ],
+   "agl_max": "circuit"
+  }
+ },
+ "meta": {
+  "status": "community",
+  "updated": "2026-11-27",
+  "change_note": "New profile, low confidence: limits from a secondary POH summary, FINAL band derived from 1.3 x Vs0, circuit bands typical practice.",
+  "sources": [
+   {
+    "title": "Beechcraft Baron G58 V-speeds (secondary summary of the G58 POH)",
+    "url": "https://rotatepilot.com/guides/beechcraft-baron-58-guide",
+    "date": "2026-11-27"
+   },
+   {
+    "title": "Beechcraft Baron 58 POH Section 2 airspeed limitations (B58 extract)",
+    "url": "https://www.scribd.com/document/466335967/B58-POH-pdf",
+    "date": "2026-11-27"
+   }
+  ]
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "icao": "KSAF",
+ "name": "Santa Fe Regional",
+ "tower_name": "Santa Fe Regional Tower",
+ "frequencies": {
+  "Tower": "119.500",
+  "Ground": "121.700",
+  "UNICOM": "122.950",
+  "ATIS": "128.550"
+ },
+ "notes": [
+  "FAA 5010: traffic pattern altitude 7000 ft MSL (value here = about 650 ft AGL).",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 651,
+ "default_side": "left",
+ "runway_sides": {
+  "10": "left",
+  "15": "left",
+  "20": "left",
+  "28": "left",
+  "33": "left",
+  "02": "left"
+ },
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

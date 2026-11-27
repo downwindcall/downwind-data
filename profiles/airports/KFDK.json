@@ -1,0 +1,42 @@
+{
+ "icao": "KFDK",
+ "name": "Frederick Muni",
+ "tower_name": "Frederick Muni Tower",
+ "frequencies": {
+  "UNICOM": "122.950",
+  "ATIS": "124.875",
+  "Ground": "127.425",
+  "Tower": "132.400"
+ },
+ "notes": [
+  "FAA 5010: TPA 1100 ft AGL single and light twins, 1600 ft AGL large twins and jets, 600 ft AGL helicopters.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1100,
+ "default_side": "right",
+ "runway_sides": {
+  "12": "right",
+  "23": "left",
+  "05": "right"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "12": 3.0,
+  "23": 3.0,
+  "30": 4.0,
+  "05": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

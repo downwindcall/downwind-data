@@ -1,0 +1,41 @@
+{
+ "icao": "KCHD",
+ "name": "Chandler Muni",
+ "tower_name": "Chandler Muni Tower",
+ "frequencies": {
+  "UNICOM": "122.950",
+  "Ground": "124.400",
+  "Tower": "126.100",
+  "ATIS": "128.325"
+ },
+ "notes": [
+  "FAA 5010 TPA field: 1057 ft.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1057,
+ "default_side": "right",
+ "runway_sides": {
+  "22R": "right",
+  "04R": "right"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "04L": 3.5,
+  "22R": 3.0,
+  "04R": 3.0,
+  "22L": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

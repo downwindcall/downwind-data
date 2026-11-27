@@ -1,0 +1,38 @@
+{
+ "icao": "KOXR",
+ "name": "Oxnard",
+ "tower_name": "Oxnard Tower",
+ "frequencies": {
+  "ATIS": "118.050",
+  "Ground": "121.900",
+  "Tower": "134.950"
+ },
+ "notes": [
+  "FAA 5010: TPA 1000 ft AGL single-engine, 1400 ft AGL multi-engine and jets.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "25": "left",
+  "07": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "25": 3.0,
+  "07": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

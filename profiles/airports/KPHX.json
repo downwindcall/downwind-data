@@ -1,0 +1,46 @@
+{
+ "icao": "KPHX",
+ "name": "Phoenix Sky Harbor Intl",
+ "tower_name": "Phoenix Sky Harbor Intl Tower",
+ "frequencies": {
+  "Clearance": "118.100",
+  "Tower": "118.700",
+  "Ground": "119.750",
+  "ATIS": "127.575"
+ },
+ "notes": [
+  "FAA 5010: TPA 1000 ft AGL light aircraft and non-turbojets, 1500 ft heavy and turbojets.",
+  "Airline airport: pattern work is not normally available; values are for reference.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "26": "right",
+  "07L": "right",
+  "25R": "left",
+  "08": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "26": 3.0,
+  "07L": 3.0,
+  "25R": 3.0,
+  "07R": 3.0,
+  "25L": 3.0,
+  "08": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "icao": "KORD",
+ "name": "Chicago O'Hare Intl",
+ "tower_name": "Chicago O'Hare Intl Tower",
+ "frequencies": {
+  "Ground": "118.050",
+  "Tower": "120.750",
+  "Clearance": "121.600",
+  "UNICOM": "122.950",
+  "ATIS": "135.400"
+ },
+ "notes": [
+  "FAA 5010: no airport-specific traffic pattern altitude published; 1000 ft AGL (FAA AC 90-66 recommendation) used.",
+  "Airline airport: pattern work is not normally available; values are for reference.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 1000,
+ "default_side": "left",
+ "runway_sides": {
+  "04L": "left",
+  "22R": "left",
+  "04R": "left",
+  "22L": "left",
+  "09R": "left",
+  "27L": "left",
+  "10L": "left",
+  "28R": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "22R": 3.0,
+  "04R": 3.0,
+  "22L": 3.0,
+  "09C": 3.0,
+  "27C": 3.0,
+  "09L": 3.0,
+  "27R": 3.0,
+  "09R": 3.0,
+  "27L": 3.0,
+  "10C": 3.0,
+  "28C": 3.0,
+  "10L": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

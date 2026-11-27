@@ -1,0 +1,39 @@
+{
+ "icao": "KTEB",
+ "name": "Teterboro",
+ "tower_name": "Teterboro Tower",
+ "frequencies": {
+  "ATIS": "132.850",
+  "Tower": "119.500",
+  "Ground": "121.900",
+  "Clearance": "128.050"
+ },
+ "notes": [
+  "FAA 5010: TPA 1000 ft MSL (about 990 AGL) for non-large/turbine aircraft, 1500 ft MSL large/turbine.",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 990,
+ "default_side": "left",
+ "runway_sides": {
+  "19": "left",
+  "24": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "19": 3.0,
+  "24": 3.2
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

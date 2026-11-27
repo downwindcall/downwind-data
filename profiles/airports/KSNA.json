@@ -1,0 +1,43 @@
+{
+ "icao": "KSNA",
+ "name": "John Wayne/Orange County",
+ "tower_name": "John Wayne/Orange County Tower",
+ "frequencies": {
+  "Clearance": "118.000",
+  "Tower": "119.900",
+  "Ground": "120.800",
+  "UNICOM": "122.950",
+  "ATIS": "126.000"
+ },
+ "notes": [
+  "FAA 5010: RWY 02L/20R TPA 1000 ft AGL small aircraft; RWY 02R/20L 800 ft AGL (value here = 800).",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 800,
+ "default_side": "left",
+ "runway_sides": {
+  "02L": "left",
+  "20R": "right",
+  "02R": "right",
+  "20L": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "02L": 3.0,
+  "20R": 3.0,
+  "20L": 3.0
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}

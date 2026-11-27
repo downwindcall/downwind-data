@@ -1,0 +1,44 @@
+{
+ "icao": "KBFI",
+ "name": "Boeing Field/King County Intl",
+ "tower_name": "Boeing Field/King County Intl Tower",
+ "frequencies": {
+  "Tower": "118.300",
+  "Ground": "121.900",
+  "UNICOM": "122.950",
+  "ATIS": "127.750",
+  "Clearance": "132.400"
+ },
+ "notes": [
+  "FAA 5010: TPA RWY 14L/32R 1000 ft MSL, RWY 14R/32L 800 ft MSL (value here = about 780 AGL).",
+  "Circuit side per runway end from FAA 5010 (blank = standard left-hand). Geometry not measured: engine defaults apply."
+ ],
+ "circuit_agl_ft": 780,
+ "default_side": "left",
+ "runway_sides": {
+  "14L": "left",
+  "32R": "right",
+  "14R": "right",
+  "32L": "left"
+ },
+ "papi": true,
+ "glide_by_rwy": {
+  "14L": 3.0,
+  "32R": 3.0,
+  "14R": 3.0,
+  "32L": 3.1
+ },
+ "glide_deg": 3.0,
+ "meta": {
+  "status": "community",
+  "sources": [
+   {
+    "title": "FAA NASR 28-day subscription (airport, runway-end, remarks, frequencies), US government data",
+    "url": "https://www.faa.gov/air_traffic/flight_info/aeronav/aero_data/NASR_Subscription/2026-11-26",
+    "date": "2026-11-27"
+   }
+  ],
+  "change_note": "New airport from FAA NASR cycle 2026-11-26. Circuit height is the published TPA where present, else the 1000 ft AGL default.",
+  "updated": "2026-11-27"
+ }
+}
