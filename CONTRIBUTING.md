@@ -30,3 +30,6 @@ Changes you make in the app's Settings stay on your PC, are labelled "Your own s
 
 ## Licence of your contribution
 Data you contribute is shared under the data licence of this repository.
+
+## For the maintainer
+After merging data changes, run `python tools/make_index.py` and commit `profiles/index.json`. The app's updater only uses files listed in that index with a matching hash, so an out-of-date index means new data is not used yet (it never causes bad data to be used). The "Validate data" run on `main` turns red when the index is stale.

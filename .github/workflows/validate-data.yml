@@ -58,6 +58,10 @@ jobs:
             curl -sSfL --retry 3 -o "data/$f.csv" "https://davidmegginson.github.io/ourairports-data/$f.csv"
           done
 
+      - name: Index is up to date (owner changes and main; contributors cannot edit it, the owner regenerates it after merging)
+        if: github.event_name != 'pull_request' || github.event.pull_request.user.login == github.repository_owner
+        run: python trusted/tools/make_index.py --check --root pr/profiles
+
       - name: Unit tests (trusted copy)
         working-directory: trusted
         run: python tests/test_validator.py
